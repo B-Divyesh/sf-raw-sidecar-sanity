@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RAW Sidecar Sanity mark">
+  <rect width="512" height="512" rx="92" fill="#174f47"/>
+  <rect x="68" y="96" width="376" height="320" rx="30" fill="#f2ead8" stroke="#252a27" stroke-width="18"/>
+  <circle cx="176" cy="216" r="66" fill="#fffaf0" stroke="#252a27" stroke-width="16"/>
+  <circle cx="336" cy="216" r="66" fill="#fffaf0" stroke="#252a27" stroke-width="16"/>
+  <path d="M176 216l-24-42M336 216l-24-42" stroke="#c86e24" stroke-width="18" stroke-linecap="round"/>
+  <path d="M118 344h276" stroke="#252a27" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="256" cy="344" r="24" fill="#c86e24" stroke="#252a27" stroke-width="10"/>
+</svg>
