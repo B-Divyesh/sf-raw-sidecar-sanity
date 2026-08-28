@@ -1,0 +1,11 @@
+{
+  "slug": "raw-sidecar-sanity",
+  "title": "RAW Sidecar Sanity",
+  "territory": "utilities",
+  "user": "A photographer importing RAW plus camera JPEG pairs who needs to catch impossible dimensions, aspect ratios, or timestamps before a catalog makes bad thumbnails and timelines.",
+  "smallest_useful_product": "Local drag-and-drop checker for a folder manifest or selected RAW/JPEG pairs; reports dimension, aspect, timestamp, and basename conflicts with a CSV export.",
+  "success_measure": "On a labelled corpus of 200 valid and intentionally mismatched pairs, detect at least 95% of injected date/aspect/basename conflicts with under 3% false positives.",
+  "artifact_class": "pwa-offline",
+  "monetization": "one-time",
+  "constraints": "Browser RAW parsing coverage will be incomplete; document supported metadata readers; never modify originals; avoid retaining image bytes."
+}
