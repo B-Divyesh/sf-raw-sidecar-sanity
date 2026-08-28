@@ -1,5 +1,16 @@
 # Handoff — RAW Sidecar Sanity v1
 
+## Independent verification status: **FAIL**
+
+Candidate `0671efbcc4a332e98d4939a8fa558a3cc7974900` was independently verified against https://raw-sidecar-sanity.sociobot.in on 2026-08-28 UTC. The live deployment byte-matches the candidate, but it is **not accepted**. See `.factory/verification.md` for exact commands and evidence.
+
+- **P1:** after a real report is rendered, axe finds serious report-eyebrow colour contrast of 1.72:1 (required 4.5:1).
+- **P2:** activating the keyboard skip link does not move focus into `<main>`.
+- **P2:** hashed live JS/CSS assets use `Cache-Control: public, must-revalidate, max-age=30`, not the required immutable long-lived caching.
+- **P3:** malformed JSON exposes raw parser text without corrective guidance; the deployment lacks CSP/Permissions/clickjacking policy and serves the manifest as `application/octet-stream`.
+
+The clean candidate install, unit suite (4/4), typecheck/production build, existing E2E suite (8/8), independent normal/boundary/invalid/recovery flow, offline reload, update-notice simulation, bundle budget, and free-flow privacy/network checks otherwise passed. This status supersedes the builder’s verification summary below; do not release as PASS until the listed defects are fixed and reverified.
+
 ## What shipped
 
 - A responsive, local-only RAW/JPEG preflight with file, folder, drag/drop, CSV, JSON, and labelled-sample entry paths.
